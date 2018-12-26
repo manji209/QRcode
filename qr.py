@@ -13,7 +13,7 @@ for item in item_list:
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_H,
-        box_size=5,
+        box_size=7,
         border=2,
     )
     # Add data
@@ -25,7 +25,7 @@ for item in item_list:
     # img.save("image.png")
     # img.save("image.bmp")
     # img.save("image.jpeg")
-    img.save("./codes/"+item[0]+".jpg")
+    img.save("./codes/"+item[0]+".png")
 
 
 '''
